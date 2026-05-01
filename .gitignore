@@ -1,0 +1,14 @@
+/vendor/
+/node_modules/
+composer.lock
+pnpm-lock.yaml
+.env
+.idea/
+.vscode/
+phpunit.result.cache
+.phpunit.cache/
+.php-cs-fixer.cache
+/build/
+test_results.txt
+/tests/storage/
+/tests/debug_html.html
