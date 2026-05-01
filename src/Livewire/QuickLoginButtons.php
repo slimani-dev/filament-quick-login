@@ -2,7 +2,6 @@
 
 namespace Slimani\QuickLogin\Livewire;
 
-use Illuminate\Contracts\Auth\Authenticatable;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\Concerns\InteractsWithActions;
@@ -10,6 +9,8 @@ use Filament\Actions\Contracts\HasActions;
 use Filament\Facades\Filament;
 use Filament\Schemas\Concerns\InteractsWithSchemas;
 use Filament\Schemas\Contracts\HasSchemas;
+use Filament\Schemas\Schema;
+use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
@@ -99,7 +100,7 @@ class QuickLoginButtons extends LivewireComponent implements HasActions, HasSche
             ->all();
     }
 
-    public function content(\Filament\Schemas\Schema $schema): \Filament\Schemas\Schema
+    public function content(Schema $schema): Schema
     {
         return $schema;
     }

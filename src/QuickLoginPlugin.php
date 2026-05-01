@@ -5,8 +5,8 @@ namespace Slimani\QuickLogin;
 use Closure;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
-use Filament\View\PanelsRenderHook;
 use Filament\Support\Concerns\EvaluatesClosures;
+use Filament\View\PanelsRenderHook;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Blade;
 
