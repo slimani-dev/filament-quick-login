@@ -30,7 +30,7 @@ class QuickLoginButtons extends LivewireComponent implements HasActions, HasSche
 
     public int $page = 1;
 
-    protected int $perPage = 5;
+    protected int $perPage = 12;
 
     protected bool $hasMorePages = false;
 
@@ -38,7 +38,7 @@ class QuickLoginButtons extends LivewireComponent implements HasActions, HasSche
 
     public function mount(): void
     {
-        $this->perPage = count($this->getPlugin()?->getUsers() ?? []) ?: 5;
+        $this->perPage = count($this->getPlugin()?->getUsers() ?? []) ?: 12;
     }
 
     public function updatedSearch(): void
