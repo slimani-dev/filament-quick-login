@@ -133,7 +133,6 @@ class QuickLoginButtons extends LivewireComponent implements HasActions, HasSche
         return $actions;
     }
 
-
     protected function getPreviousPageAction(): Action
     {
         return Action::make('previousPage')
@@ -176,7 +175,7 @@ class QuickLoginButtons extends LivewireComponent implements HasActions, HasSche
                     ->suffixActions([
                         $this->getPreviousPageAction(),
                         $this->getNextPageAction(),
-                    ])
+                    ]),
             ]);
     }
 
