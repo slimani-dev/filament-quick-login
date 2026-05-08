@@ -1,6 +1,7 @@
 {
     "name": "slimani/filament-quick-login",
     "description": "A quick login plugin for Filament login page.",
+    "version": "0.3.1",
     "keywords": [
         "laravel",
         "filament",
